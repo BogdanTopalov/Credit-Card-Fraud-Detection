@@ -13,7 +13,7 @@ The goal was not just to train a machine learning model, but to design a product
 The solution is aligned with enterprise data engineering practices.
 
 
-### Business Problem
+## Business Problem
 
 A credit card company wants to identify fraudulent transactions while minimizing missed fraud.
 
@@ -23,11 +23,11 @@ Key requirement:
 
 This leads to a recall-first optimization strategy, where the model is tuned to catch as much fraud as possible, even at the cost of higher false positives.
 
-### Architecture
+## Architecture
 
 The solution follows a Bronze → Silver → Gold Lakehouse architecture.
 
-### Data Flow
+## Data Flow
 
 ```
 Raw CSV Files
@@ -45,14 +45,14 @@ Batch Scoring (Test / New Data)
 Gold Fraud Predictions (Analytics-ready)
 ```
 
-### Fabric Components Used
+## Fabric Components Used
 - Microsoft Fabric Lakehouse (Delta tables)
 - Fabric Notebooks (PySpark)
 - Fabric Data Pipelines (Notebook orchestration)
 - ML model persistence
 - Gold tables for BI and reporting
 
-### Dataset
+## Dataset
 
 https://www.kaggle.com/datasets/kartik2112/fraud-detection
 
@@ -64,7 +64,7 @@ The dataset represents anonymized credit card transactions and includes:
 
 The data is highly imbalanced, which is typical for fraud detection problems.
 
-### Project Structure
+## Project Structure
 
 ```
 fraud-detection-fabric/
